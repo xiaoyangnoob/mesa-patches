@@ -19,4 +19,8 @@ git checkout 2934e1fad52806b4904a22c037c564eba6e21c85
 2. 应用补丁 (**确保你在代码库根目录下！**)
 `git apply /path/to/your/patch`
 ---
+### 感谢
+[Termux Packages developers](https://github.com/termux/termux-packages "Termux Packages Github Repository")  
+[XMeM](https://github.com/XMeM "XMeM Github")  
+---
 好的，没有什么要讲的了。END喽！
