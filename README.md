@@ -16,7 +16,7 @@ git clone https://gitlab.freedesktop.org/mesa/mesa.git ./mesa-2934e1f/
 cd ./mesa-2934e1f/
 git checkout 2934e1fad52806b4904a22c037c564eba6e21c85
 ```
-2. 应用补丁 (**确保你在代码库根目录下！**)
+2. 应用补丁 (**确保你在mesa代码库根目录下！**)
 `git apply /path/to/your/patch`
 ---
 ### 感谢
