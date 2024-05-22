@@ -1,0 +1,34 @@
+name: Bug Report
+description: File a bug report.
+title: "[Patch request]: "
+labels: ["help wanted", "bug"]
+projects: ["xiaoyangnoob/my-patches"]
+assignees:
+  - xiaoyangnoob
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提交issue，请说明清楚你的问题！
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么？
+      description: 说明清楚在应用补丁的时候发生了什么问题。
+      placeholder: 告诉我你遇到了什么问题。
+      value: "我遇到了一个bug。"
+    validations:
+      required: true
+  - type: dropdown
+    id: versions
+    attributes:
+      label: mesa版本
+      multiple: true
+      options:
+         - 主线
+         - 其他版本（在下方说明）
+  - type: textarea
+    id: version
+    attributes:
+      label: 在下方输入你的版本：
+      description: 版本形式可以是常规版本号或者git提交编号。
