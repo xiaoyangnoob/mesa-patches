@@ -1,0 +1,28 @@
+diff --git a/meson.build b/meson.build
+index 072dd7bcb21..3fd0929d478 100644
+--- a/meson.build
++++ b/meson.build
+@@ -402,6 +402,10 @@ with_platform_x11 = _platforms.contains('x11')
+ with_platform_wayland = _platforms.contains('wayland')
+ with_platform_haiku = _platforms.contains('haiku')
+ with_platform_windows = _platforms.contains('windows')
++with_platform_glibc_termux = _platforms.contains('glibc-termux')
++
++if with_platform_glibc_termux
++  pre_args += '-D__GLIBC__'
+ 
+ with_glx = get_option('glx')
+ if with_glx == 'auto'
+diff --git a/meson_options.txt b/meson_options.txt
+index 7c021c14cfe..66d3df8028e 100644
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -12,7 +12,7 @@ option(
+   type : 'array',
+   value : ['auto'],
+   choices : [
+-    'auto', 'x11', 'wayland', 'haiku', 'android', 'windows',
++    'auto', 'x11', 'wayland', 'haiku', 'android', 'windows', 'glibc-termux',
+   ],
+   description : 'window systems to support. If this is set to `auto`, all ' +
+                 'platforms applicable will be enabled.'
