@@ -24,5 +24,6 @@ git checkout 2934e1fad52806b4904a22c037c564eba6e21c85
 * [XMeM](https://github.com/XMeM "XMeM Github")
 * **JeezDizReez**
 * **airidosas252**
+* [alexvorxx](https://github.com/alexvorxx "alexvorxx Github")
 ---
 好的，没有什么要讲的了。END喽！
