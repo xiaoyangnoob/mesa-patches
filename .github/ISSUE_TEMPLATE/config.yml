@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email
+    url: xiaoyangnoob@outlook.com
+    about: 您可以通过邮件联系我解决问题（建议优先通过github，邮件可能得不到及时回复。）
