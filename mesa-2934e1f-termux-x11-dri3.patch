@@ -140,7 +140,7 @@ index 055078106e4..741ec7e2d9a 100644
        .iova = req.gpuaddr,
        .name = tu_debug_bos_add(dev, req.mmapsize, name),
        .refcnt = 1,
-+			 .dmabuf_fd = -1,
++      .dmabuf_fd = -1,
     };
 
     *out_bo = bo;
@@ -148,7 +148,7 @@ index 055078106e4..741ec7e2d9a 100644
        .iova = info_req.gpuaddr,
        .name = tu_debug_bos_add(dev, info_req.size, "dmabuf"),
        .refcnt = 1,
-+			 .dmabuf_fd = os_dupfd_cloexec(fd),
++      .dmabuf_fd = os_dupfd_cloexec(fd),
     };
 
     *out_bo = bo;
@@ -386,7 +386,7 @@ index 29b123e624e..e37da560c3a 100644
 -   close(dri3_fd);
 -
 -   return match;
-+  return true;
++   return true;
  }
 
  static bool
