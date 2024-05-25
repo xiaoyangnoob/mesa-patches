@@ -21,7 +21,7 @@ git checkout 2934e1fad52806b4904a22c037c564eba6e21c85
 * _对于git补丁_  
 `git apply /path/to/your/git_patch`  
 * _对于unix补丁_  
-`patch -p x -i /path/to/your/unix_patch`  
+`patch -p num -i /path/to/your/unix_patch` （num是跳过的目录层数，根据情况指定。一般都是1，跳过比对目录的第一层；补丁从根目录起的对应文件。）   
 ---
 ### 感谢
 * [Termux Packages developers](https://github.com/termux/termux-packages "Termux Packages Github Repository")
