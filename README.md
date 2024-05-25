@@ -19,7 +19,6 @@ git checkout 2934e1fad52806b4904a22c037c564eba6e21c85
 _2. 应用补丁 (**确保你在mesa代码库根目录下！**)_  
 ---
 **温馨提示：辨别补丁类型请打开文件看diff命令的参数，包含--git是git patch；否则就是unix patch。**  
----
 * _对于git补丁_  
 `git apply /path/to/your/git_patch`  
 * _对于unix补丁_  
